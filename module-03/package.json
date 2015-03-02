@@ -1,0 +1,17 @@
+{
+  "name": "module-01",
+  "version": "1.0.0",
+  "description": "",
+  "main": "check-site.js",
+  "scripts": {
+    "test": "mocha"
+  },
+  "author": "Guy Ellis <wildfiction@gmail.com>",
+  "license": "MIT",
+  "dependencies": {
+    "request": "^2.53.0"
+  },
+  "devDependencies": {
+    "mocha": "^2.1.0"
+  }
+}

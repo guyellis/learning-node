@@ -16,12 +16,13 @@ Code to accompany Learning Node.js
   * What order are the results returned in? Is this predictable?
 
 03. Testing
+  * What is `module` and `module.exports`?
   * Why is testing important in a non-static language?
 	* Make the file testable
 	* Add a test
-
 
 Extra:
 * Keeping node up-to-date and switching versions:
   * n and nvm
 * Deploying multiple versions of node using nvm (bucketed deployments)
+
