@@ -25,6 +25,15 @@ Code to accompany Learning Node.js
   * What if you were disconnected from the internet? How would you test your code?
   * How would you test your error handling code?
 
+05. Generating code coverage
+  * Which lines are not tested?
+  * What happens if we change the name of the "callback" function in the error condition?
+  Does `npm test` still run okay?
+  * What other tools can we use to protect against this?
+
+06. Complete code coverage
+  *
+
 Extra:
 * Keeping node up-to-date and switching versions:
   * n and nvm
