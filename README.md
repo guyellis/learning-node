@@ -21,6 +21,10 @@ Code to accompany Learning Node.js
 	* Make the file testable
 	* Add a test
 
+04. Testing without dependencies
+  * What if you were disconnected from the internet? How would you test your code?
+  * How would you test your error handling code?
+
 Extra:
 * Keeping node up-to-date and switching versions:
   * n and nvm
