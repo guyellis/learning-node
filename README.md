@@ -7,35 +7,36 @@ Take a break from the traditional way that we normally teach.
 * Forget the Intro
   * Your audience wants to learn how to develop in Node.js. They don't want
   to hear that
-  *Node is uses an event-driven, non-blocking I/O model that makes it lightweight and efficient*
-  or that *Node is a platform built on Chrome's JavaScript runtime*.
-  You don't need to sell them on using Node. They are already your (captive)
-  audience and they're there because they want to learn Node. Don't waste their time.
-  * Their curiosity and desire to know that will come later once they've got
-  their hands dirty with some real code.
+  *Node uses an event-driven, non-blocking I/O model that makes it lightweight
+   and efficient* or that *Node is a platform built on Chrome's JavaScript
+   runtime*. You don't need to sell them on using Node. They're already your
+   (captive) audience and they're there because they want to learn Node.
+   Don't waste their time.
+  * Their curiosity and desire to know those details will come later once
+  they've got their hands dirty with some real code.
 * Build something they can immediately use
   * It's highly likely that every member of the audience owns a website or has
-  and employer or client that has a website. It's also highly likely that they
+  an employer or client that has a website. It's also highly likely that they
   will want to know if the site is not functioning correctly.
   * Let's build, in a few lines of code something that they can actually use
-  to help monitor they websites that they are responsible for. We're going
+  to help monitor the websites that they're responsible for. We're going
   to build something that they can use instead of something contrived.
 * Build a client not a server
-  * It's generally easier to understand what a browser does than a server. Why?
-  Because everyone uses a browser all day long.
-  * Writing code is not trivial. Writing a client and building on that will ease
-  them into Node rather than throwing them in the deep end.
+  * It's generally easier to understand what a browser does than a server.
+  Why? Because everyone uses a browser all day long.
+  * Writing code is not trivial. Writing a client and building on that will
+   ease them into Node rather than throwing them in the deep end.
 
 # Who is this for?
 
 * Anybody who wants to learn Node.js
-  * You could go through the slides and modules and try and answer the questions
-  on your own, however:
-  * It would be much better if someone took you through the slides and each module
-  and helped you understand the answers to each question.
+  * You could go through the slides and modules and try and answer the
+  questions on your own, however:
+  * It would be much better if someone took you through the slides and each
+  module and helped you understand the answers to each question.
 * Anyone who wants to teach Node.js
-  * Use the slides and the code in this repo "as is" to teach students how to code
-   in Node.js or...
+  * Use the slides and the code in this repo "as is" to teach students how
+  to code in Node.js or...
   * Fork this repo and build your own version.
   * Pull Requests that improve the course are happily accepted.
 
