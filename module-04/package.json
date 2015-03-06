@@ -1,5 +1,5 @@
 {
-  "name": "module-04",
+  "name": "module-03",
   "version": "1.0.0",
   "description": "",
   "main": "check-site.js",
@@ -12,7 +12,6 @@
     "request": "^2.53.0"
   },
   "devDependencies": {
-    "mocha": "^2.1.0",
-    "rewire": "^2.3.1"
+    "mocha": "^2.1.0"
   }
 }

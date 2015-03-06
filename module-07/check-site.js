@@ -7,6 +7,8 @@ module.exports.run = function(callback) {
     if(response.statusCode === 200) {
       return callback('Received expected status');
     } else {
+      // Would "npm test" still run okay if "callback" was changed
+      // to "ballback" in the line below?
       return callback('Unexpected status ' + response.statusCode);
     }
   });

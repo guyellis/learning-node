@@ -64,6 +64,8 @@ Take a break from the traditional way that we normally teach.
   * What needs to be changed to get a 301? i.e. how is `request` "helping?"
   * What order are the results returned in? Is this predictable?
 
+3. Using modules
+
 3. Testing
   * What is `module` and `module.exports`?
   * Why is testing important in a non-static language?
