@@ -71,6 +71,7 @@ Take a break from the traditional way that we normally teach.
   * Why is testing important in a non-static language?
 	* Make the file testable
 	* Add a test
+	* You've now seen 3 ways to "require" functionality in a module? What are they?
 
 5. Testing without dependencies
   * What if you were disconnected from the internet? How would you test your code?
