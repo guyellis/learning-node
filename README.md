@@ -65,24 +65,24 @@ Take a break from the traditional way that we normally teach.
   * What order are the results returned in? Is this predictable?
 
 3. Using modules
-
-3. Testing
   * What is `module` and `module.exports`?
+
+4. Testing
   * Why is testing important in a non-static language?
 	* Make the file testable
 	* Add a test
 
-4. Testing without dependencies
+5. Testing without dependencies
   * What if you were disconnected from the internet? How would you test your code?
   * How would you test your error handling code?
 
-5. Generating code coverage
+6. Generating code coverage
   * Which lines are not tested?
   * What happens if we change the name of the "callback" function in the error condition?
   Does `npm test` still run okay?
   * What other tools can we use to protect against this?
 
-6. Complete code coverage
+7. Complete code coverage
   *
 
 Extra:
