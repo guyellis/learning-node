@@ -3,6 +3,7 @@
 var request = require('request');
 
 // What is module.exports?
+// What can module.exports be set? Just a function?
 module.exports = function(callback) {
   request('http://www.yahoo.com', function(error,response){
     if(response.statusCode === 200) {
@@ -13,5 +14,5 @@ module.exports = function(callback) {
   });
 };
 
-// Why does callback() function take a null as the first parameter if
+// Why does the callback() function take a null as the first parameter if
 // the call is successful and not if the call fails?
