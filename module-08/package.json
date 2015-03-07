@@ -1,10 +1,11 @@
 {
-  "name": "module-04",
+  "name": "module-05",
   "version": "1.0.0",
   "description": "",
   "main": "check-site.js",
   "scripts": {
-    "test": "mocha"
+    "test": "mocha",
+    "istanbul": "node_modules/.bin/istanbul cover node_modules/.bin/_mocha test/*.js test/**/*.js"
   },
   "author": "Guy Ellis <wildfiction@gmail.com>",
   "license": "MIT",
@@ -12,6 +13,7 @@
     "request": "^2.53.0"
   },
   "devDependencies": {
+    "istanbul": "^0.3.6",
     "mocha": "^2.1.0",
     "rewire": "^2.3.1"
   }

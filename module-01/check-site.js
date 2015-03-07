@@ -1,7 +1,6 @@
-'use strict';
 
-var request = require('request');
+var http = require('http');
 
-request('http://www.yahoo.com', function(err, response){
+http.get('http://www.yahoo.com', function(response){
   console.log('www.yahoo.com: ', response.statusCode);
 });

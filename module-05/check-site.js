@@ -11,3 +11,5 @@ module.exports = function(callback) {
     }
   });
 };
+
+// What happened to the index.js file? Don't we need it anymore to run the checks?

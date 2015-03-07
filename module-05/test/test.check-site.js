@@ -1,18 +1,12 @@
 'use strict';
 
+// Why don't we need to do an "npm install assert" ?
 var assert = require('assert');
 
-var rewire = require('rewire');
-var checkSite = rewire('../check-site');
+var checkSite = require('../check-site');
 
 describe('test suite', function(){
   it('should run all the tests', function(done){
-    checkSite.__set__('request', function(url, callback) {
-      // What happens if we change the status that we're faking
-      // to something else like a 301 or 404?
-      callback(null, { statusCode: 200 });
-    });
-
     checkSite(function(err, result){
       assert.equal(result, 'Received expected status');
       done();
