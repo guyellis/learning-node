@@ -50,6 +50,18 @@ Take a break from the traditional way that we normally teach.
 * You should have [Node.js](http://nodejs.org) or [io.js](http://iojs.org) installed.
   (This will also install npm which you'll need.)
 
+# HTTP Status
+
+A quick refresher on some HTTP statuses:
+
+* 200 - OK
+* 301 - Moved Permanently
+* 302 - Found (Moved Temporarily)
+* 400 - Bad Request
+* 401 - Unauthorized
+* 403 - Forbidden
+* 404 - Not Found
+
 # Modules
 
 1. A simple client to check a site's status
@@ -68,13 +80,32 @@ Take a break from the traditional way that we normally teach.
 2. Replace `http` with `request`
   * Open `module-02/check-site.js` in an editor
   * How does this differ from the file in module-01?
+  * What is `'use strict'`?
   * What happens when you `node check-site.js` this file?
   * What can we do to address this failure?
+    * i.e. Why did `require('http')` work while
+    `require('request')` did not?
+  * What directory appears after we run `npm install request`?
+    * Note: You can use `i` instead of `install`.
+  * What is the purpose of this directory?
+  * Does `node check-site.js` work now?
+    * Does it return the same status as in module-01? We'll
+    answer that question in the next module.
 
 3. Check status of multiple sites
-  * Why are both returning 200?
+  * Notice the new `package.json` file in this directory.
+  How can we create it? What is its purpose?
+  * What happens when we run `npm install` now?
+    Why didn't we have to specify `request` at the end?
+  * Open `check-site.js`, note the requests that we're making.
+  * Run `node check-site.js`.
+  * We have 3 `console.log()` statements.
+    * Did they print in the same order as in the file?
+    * Which one responds first? Why?
+    * Is the order of response guaranteed/deterministic?
+  * Why are both site returning 200?
+    * In a browser one of them returns 301.
   * What needs to be changed to get a 301? i.e. how is `request` "helping?"
-  * What order are the results returned in? Is this predictable?
 
 4. Using modules
   * What is `module` and `module.exports`?
