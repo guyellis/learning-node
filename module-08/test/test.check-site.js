@@ -12,7 +12,7 @@ describe('test suite', function(){
       callback(null, { statusCode: 200 });
     });
 
-    index.run(function(result){
+    index.run(function(err, result){
       assert.equal(result, 'Received expected status');
       done();
     });
@@ -23,8 +23,8 @@ describe('test suite', function(){
       callback(null, { statusCode: 404 });
     });
 
-    index.run(function(result){
-      assert.equal(result, 'Unexpected status 404');
+    index.run(function(err, result){
+      assert.equal(err, 'Unexpected status 404');
       done();
     });
   });

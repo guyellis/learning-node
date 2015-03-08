@@ -1,11 +1,11 @@
 {
   "name": "module-08",
   "version": "1.0.0",
-  "description": "",
+  "description": "A module and question based approach to learning Node or io.js",
   "main": "check-site.js",
   "scripts": {
     "test": "mocha",
-    "istanbul": "node_modules/.bin/istanbul cover node_modules/.bin/_mocha test/*.js test/**/*.js"
+    "istanbul": "node_modules/.bin/istanbul cover node_modules/.bin/_mocha test/test.*.js"
   },
   "author": "Guy Ellis <wildfiction@gmail.com>",
   "license": "MIT",

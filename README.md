@@ -42,7 +42,7 @@ Take a break from the traditional way that we normally teach.
 
 * Each module introduces a new concept. We start off by building a client that checks
   that our site is running. We add more checks. Then we add testing, mocking and code
-  coverage. We move on to creating a server. Finally we discuss tools that may help us.
+  coverage. Finally we discuss tools that may help us.
 * This readme will move you from module to module. Each module has some questions
   that we expect to have answered by the end of it.
 * Based on time available any number of modules can be covered. It is better that you move
@@ -112,6 +112,8 @@ A quick refresher on some HTTP statuses:
     Why didn't we have to specify `request` at the end?
   * If `request` wasn't already in `package.json` then how could we
   have added it when running `npm i request`?
+  * What's the `^` in front of the version number for request? What
+  are the other options?
   * Open `check-site.js`, note the requests that we're making.
   * Run `node check-site.js`.
   * We have 3 `console.log()` statements.
@@ -164,7 +166,11 @@ A quick refresher on some HTTP statuses:
   * How can we modify our test to check the error handling code?
 
 8. Complete code coverage
-  *
+  * Take a look at the new test in the test file. What does it do?
+  * Run `npm run istanbul`. What does the code coverage look like now?
+  * What happens if we change the name of the `callback()` function in the
+  error condition to `callbag()`? Will the tests and coverage still run okay?
+  * Although they failed, was a coverage report still generated?
 
 Extra:
 * Keeping node up-to-date and switching versions:

@@ -13,7 +13,7 @@ describe('test suite', function(){
       callback(null, { statusCode: 200 });
     });
 
-    index.run(function(result){
+    index.run(function(err, result){
       assert.equal(result, 'Received expected status');
       done();
     });

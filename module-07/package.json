@@ -1,7 +1,7 @@
 {
   "name": "module-07",
   "version": "1.0.0",
-  "description": "",
+  "description": "A module and question based approach to learning Node or io.js",
   "main": "check-site.js",
   "scripts": {
     "test": "mocha",
