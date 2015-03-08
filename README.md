@@ -147,13 +147,18 @@ A quick refresher on some HTTP statuses:
 6. Testing without dependencies
   * What if you were disconnected from the internet or your internet-based
   dependencies is down? How would you test your code?
-  * How would you test your error handling code?
+  * Take a look a `package.json`. What is `rewire`?
+  * Why are we using `rewire` instead of something more popular like `sinon`?
+  * What happens if we change the status that we're faking to something else
+  like a 301 or 404?
 
 7. Generating code coverage
   * Which lines are not tested?
-  * What happens if we change the name of the "callback" function in the error condition?
+  * What happens if we change the name of the `callback()` function in the
+  error condition to `callbag()`? Will the tests still run okay?
   Does `npm test` still run okay?
   * What other tools can we use to protect against this?
+  * How can we modify our test to check the error handling code?
 
 8. Complete code coverage
   *

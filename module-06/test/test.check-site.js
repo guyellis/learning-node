@@ -8,8 +8,6 @@ var checkSite = rewire('../check-site');
 describe('test suite', function(){
   it('should run all the tests', function(done){
     checkSite.__set__('request', function(url, callback) {
-      // What happens if we change the status that we're faking
-      // to something else like a 301 or 404?
       callback(null, { statusCode: 200 });
     });
 
