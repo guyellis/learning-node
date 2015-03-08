@@ -153,10 +153,13 @@ A quick refresher on some HTTP statuses:
   like a 301 or 404?
 
 7. Generating code coverage
-  * Which lines are not tested?
+  * What's new in `package.json`? What is `istanbul`?
+  * Why are we testing the `test.*.js` pattern and not `*.js` for `istanbul`?
+  Why aren't we using this pattern for `mocha`?
+  * Run istanbul with `npm run istanbul`. Which lines are not tested?
   * What happens if we change the name of the `callback()` function in the
   error condition to `callbag()`? Will the tests still run okay?
-  Does `npm test` still run okay?
+  Do `npm test` and `npm run istanbul` still run okay?
   * What other tools can we use to protect against this?
   * How can we modify our test to check the error handling code?
 
