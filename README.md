@@ -50,6 +50,19 @@ Take a break from the traditional way that we normally teach.
 * You should have [Node.js](http://nodejs.org) or [io.js](http://iojs.org) installed.
   (This will also install npm which you'll need.)
 
+# Following along
+
+Use one of these methods if you want to follow along during the presentation/workshop:
+
+* Download the modules (and this file) as a zip file from GitHub and unzip it locally.
+  * Advantages: No `git` knowledge or client software required.
+* Clone the repo locally
+  * Advantages: Can see what changes you made compared to original.
+  Can quickly revert changes.
+* Fork and clone repo locally
+  * Advantages: Can push changes and notes to your fork of the repo.
+  Can submit pull requests for improvements you've made.
+
 # HTTP Status
 
 A quick refresher on some HTTP statuses:
@@ -97,6 +110,8 @@ A quick refresher on some HTTP statuses:
   How can we create it? What is its purpose?
   * What happens when we run `npm i` now?
     Why didn't we have to specify `request` at the end?
+  * If `request` wasn't already in `package.json` then how could we
+  have added it when running `npm i request`?
   * Open `check-site.js`, note the requests that we're making.
   * Run `node check-site.js`.
   * We have 3 `console.log()` statements.
@@ -113,15 +128,25 @@ A quick refresher on some HTTP statuses:
   * Why does the `callback()` function take null as the first param?
     * Why does it take a single param in the second instance?
   * Why split the functionality into a separate module?
-  
+  * What are the 3 ways of using `require()` that we've seen? i.e.
+  Where do the modules reside and what do we need to do to access them?
+
 5. Testing
   * Why is testing important in a non-static language?
-	* Make the file testable
-	* Add a test
-	* You've now seen 3 ways to "require" functionality in a module? What are they?
+  * What happened to the `index.js` file? Don't we need it anymore to run the checks?
+	* Open the `package.json` file. What is the `devDependencies` section?
+	* What is mocha?
+	* Why does `scripts` now have `test` set to `mocha`?
+	* How do you add a module to the `devDependencies` section with `npm i`?
+	* Open the `test.check-site.js` file. What do `describe()` and `it()` do?
+  * Why don't we need to do an `npm i assert` to use the `assert` module?
+	* Run the test using `npm test`? Why does this work? i.e. How does `npm`
+	know to run `mocha`?
+	* What is `done()`?
 
 6. Testing without dependencies
-  * What if you were disconnected from the internet? How would you test your code?
+  * What if you were disconnected from the internet or your internet-based
+  dependencies is down? How would you test your code?
   * How would you test your error handling code?
 
 7. Generating code coverage
