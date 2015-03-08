@@ -95,7 +95,7 @@ A quick refresher on some HTTP statuses:
 3. Check status of multiple sites
   * Notice the new `package.json` file in this directory.
   How can we create it? What is its purpose?
-  * What happens when we run `npm install` now?
+  * What happens when we run `npm i` now?
     Why didn't we have to specify `request` at the end?
   * Open `check-site.js`, note the requests that we're making.
   * Run `node check-site.js`.
@@ -108,8 +108,12 @@ A quick refresher on some HTTP statuses:
   * What needs to be changed to get a 301? i.e. how is `request` "helping?"
 
 4. Using modules
-  * What is `module` and `module.exports`?
-
+  * What is `module.exports`?
+    * Can it be set to anything else or only a function?
+  * Why does the `callback()` function take null as the first param?
+    * Why does it take a single param in the second instance?
+  * Why split the functionality into a separate module?
+  
 5. Testing
   * Why is testing important in a non-static language?
 	* Make the file testable
