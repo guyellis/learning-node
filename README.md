@@ -50,6 +50,14 @@ Take a break from the traditional way that we normally teach.
 * You should have [Node.js](http://nodejs.org) or [io.js](http://iojs.org) installed.
   (This will also install npm which you'll need.)
 
+# Tested on
+
+* Node.js
+  * 0.10.36
+  * 0.12.0
+* io.js
+  * 1.5.0
+
 # Following along
 
 Use one of these methods if you want to follow along during the presentation/workshop:
@@ -172,34 +180,55 @@ A quick refresher on some HTTP statuses:
   error condition to `callbag()`? Will the tests and coverage still run okay?
   * Although they failed, was a coverage report still generated?
 
-Extra:
-* Keeping node up-to-date and switching versions:
-  * n and nvm
-* Deploying multiple versions of node using nvm (bucketed deployments)
-* Tools
-  * Testing
-    * Mocha
-      * `npm install mocha --save-dev`
-      * `mocha` or `npm test`
-  * Mocking
-    * Rewire
-      * `npm install rewire --save-dev`
-      * `var rewire = require('rewire');`
-      * `var someModule = rewire('some-module');`
-  * Coverage
-    * Istanbul
-      * `npm install istanbul --save-dev`
-      * Setup in package.json
-      * `npm run istanbul`
-  * Linting
-    * JSHint
-      * `npm install jshint --save-dev`
-      * Setup in package.json
-      * `npm run jshint`
-  * Pre-commit
-    * `npm install pre-commit --save-dev`
-  * Update dependencies
-    * `npm install npm-update-outdated --save-dev`
-    * Use as first command in pre-commit section of package.json to make
-     sure that all dependencies are up-to-date.
+# Tools and Utilities
+
+Questions and Answers
+
+* How can I keep node and io.js up-to-date and easily switch between versions?
+  * [n](https://github.com/tj/n) and [nvm](https://github.com/creationix/nvm)
+  are currently the most popular options.
+  * Matt Palmerlee has written a [comparison of n and nvm]
+  (http://www.mattpalmerlee.com/2013/03/23/installing-and-switching-between-multiple-versions-of-node-js-n-vs-nvm/).
+  * If you are using `n` then you can switch versions using:
+    * Node.js: `n 0.12.0` or `n 0.10.36`
+    * io.js: `n io 1.5.0`
+    * Check Node/io.js version: `node -v`
+* How can I deploy multiple/different versions of my app on the same server
+with different versions of Node.js and/or io.js?
+  * Using `nvm` you can switch Node.js/io.js versions before running the app. `nvm` adjusts
+   the `$PATH` variable so each instance will have a different `$PATH` value pointing to a
+   different version of Node.js or io.js
+* Testing
+  * Mocha is the most popular although there are a lot consider.
+    * `npm install mocha --save-dev`
+    * `mocha` or `npm test`
+* Mocking
+  * Rewire is probably the easiest to understand if you're starting out
+    * `npm install rewire --save-dev`
+    * `var rewire = require('rewire');`
+    * `var someModule = rewire('some-module');`
+  * Sinon is not immediately intuitive but it's very powerful and flexible.
+   Graduate on to this once you are comfortable with `rewire` and understand
+   the concepts.
+    * `npm install sinon --save-dev`
+    * `var sinon = require('sinon');`
+    * `sinon.stub(mailSender, 'mailSender', function (mailOptions, callback) {...`
+* Coverage
+  * Istanbul
+    * `npm install istanbul --save-dev`
+    * package.json:
+      * `"istanbul": "node_modules/.bin/istanbul cover node_modules/.bin/_mocha test/test.*.js"`
+    * `npm run istanbul`
+* Linting
+  * JSHint
+    * `npm install jshint --save-dev`
+    * package.json:
+      * `"jshint": "jshint ."`
+    * `npm run jshint`
+* Pre-commit
+  * `npm install pre-commit --save-dev`
+* Update dependencies
+  * `npm install npm-update-outdated --save-dev`
+  * Use as first command in pre-commit section of package.json to make
+   sure that all dependencies are up-to-date.
 
