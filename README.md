@@ -60,13 +60,13 @@ Take a break from the traditional way that we normally teach.
 
 # Following along
 
-Use one of these methods if you want to follow along during the presentation/workshop:
+Use one of these methods if you want to follow along during a presentation/workshop:
 
 * Download the modules (and this file) as a zip file from GitHub and unzip it locally.
-  * Advantages: No `git` knowledge or client software required.
+  * Advantages: No `git` knowledge or `git` software required.
 * Clone the repo locally
   * Advantages: Can see what changes you made compared to original.
-  Can quickly revert changes.
+  * Can quickly revert changes.
 * Fork and clone repo locally
   * Advantages: Can push changes and notes to your fork of the repo.
   Can submit pull requests for improvements you've made.
@@ -89,12 +89,12 @@ A quick refresher on some HTTP statuses:
   * Open the module-01 folder in a terminal window. There should be a single
   `check-site.js` file in there.
   * Open the file in an editor.
-    * What does this code do?
-    * What is the require() function?
+  * What does this code do?
+  * What is the `require()` function?
   * Run `node check-site.js`
   * What was the result? Is this what you expected?
   * What could you do to get the expected result?
-    * i.e. what happens when you open that site in a browser?
+  i.e. what happens when you open that site in a browser?
 	* Why is this type of utility of value?
 	* How can you check both http and https sites?
 
