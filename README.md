@@ -128,8 +128,7 @@ A quick refresher on some HTTP statuses:
     * Did they print in the same order as in the file?
     * Which one responds first? Why?
     * Is the order of response guaranteed/deterministic?
-  * Why are both site returning 200?
-    * In a browser one of them returns 301.
+  * Why are both site returning 200? In module-01 the http version returned 301.
   * What needs to be changed to get a 301? i.e. how is `request` "helping?"
 
 4. Using modules
