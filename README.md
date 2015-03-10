@@ -64,6 +64,8 @@ Take a break from the traditional way that we normally teach.
 
 Use one of these methods if you want to follow along during a presentation/workshop:
 
+* Online at GitHub, this is probably where you are now.
+  * Advantages: Don't need to download anything.
 * Download the modules (and this file) as a zip file from GitHub and unzip it locally.
   * Advantages: No `git` knowledge or `git` software required.
 * Clone the repo locally
