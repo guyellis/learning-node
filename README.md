@@ -1,5 +1,7 @@
 # Learning Node
 
+Created by [Guy Ellis](http://twitter.com/wildfiction).
+
 # A Different Approach
 
 Take a break from the traditional way that we normally teach.

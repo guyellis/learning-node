@@ -224,6 +224,16 @@
   * How can we modify our test to check the error handling code?
     * By creating a test that fakes an error during the call to `request()`
 
+8. Complete code coverage
+  * Take a look at the new test in the test file. What does it do?
+    * It fakes a 404 HTTP status code when `request` is called.
+  * Run `npm run istanbul`. What does the code coverage look like now?
+    * Now should 100% coverage.
+  * What happens if we change the name of the `callback()` function in the
+  error condition to `callbag()`? Will the tests and coverage still run okay?
+    * No, both `mocha` and `istanbul` will report failures.
+  * Although they failed, was a coverage report still generated?
+    * Yes.
 
 
 
