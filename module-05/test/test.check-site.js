@@ -1,6 +1,5 @@
 'use strict';
 
-
 var assert = require('assert');
 
 var checkSite = require('../check-site');

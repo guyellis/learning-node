@@ -137,7 +137,31 @@
     * Local application modules should be referenced using a relative path
     `require('../../lib/<local-module-name>)`
 
-
+5. Testing
+  * Why is testing important in dynamically typed language such as JavaScript?
+    * Statically typed languages typically have compilers that perform type
+     checking at compile time. Each statement is verified for syntactic accuracy
+     during compilation. Dynamic languages do not have this which means that
+     statements that have not been executed during development have not been
+     checked for syntactic accuracy.
+  * What happened to the `index.js` file? Don't we need it anymore to run the checks?
+    * In this module we're going to be running the checks through the tester.
+	* Open the `package.json` file. What is the `devDependencies` section?
+	  * `devDependencies` are third party modules that are only needed to run the tools
+	  that we use in the development of the application and are not needed when
+	  the application gets deployed to production.
+	* What is mocha?
+	  * [mocha](http://mochajs.org/) is a JavaScript test framework.
+	* Why does `scripts` now have `test` set to `mocha`?
+	  * This lets `npm` know how to execute the `npm test` command.
+	* How do you add a module to the `devDependencies` section with `npm i`?
+	  * `npm i <module-name> --save-dev`
+	* Open the `test.check-site.js` file. What do `describe()` and `it()` do?
+	  
+  * Why don't we need to do an `npm i assert` to use the `assert` module?
+	* Run the test using `npm test`? Why does this work? i.e. How does `npm`
+	know to run `mocha`?
+	* What is `done()`?
 
 
 

@@ -144,7 +144,7 @@ A quick refresher on some HTTP statuses:
   Where do the modules reside and what do we need to do to access them?
 
 5. Testing
-  * Why is testing important in a non-static language?
+  * Why is testing important in a dynamic language such as JavaScript?
   * What happened to the `index.js` file? Don't we need it anymore to run the checks?
 	* Open the `package.json` file. What is the `devDependencies` section?
 	* What is mocha?
