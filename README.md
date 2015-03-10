@@ -161,6 +161,7 @@ A quick refresher on some HTTP statuses:
   dependencies is down? How would you test your code?
   * Take a look a `package.json`. What is `rewire`?
   * Why are we using `rewire` instead of something more popular like `sinon`?
+  * In `test.check-site.js` what does `__set__()` do?
   * What happens if we change the status that we're faking to something else
   like a 301 or 404?
 

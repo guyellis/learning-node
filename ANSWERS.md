@@ -177,7 +177,25 @@
 	  * If all the code in our test is synchronous then we don't need to pass in
 	  a callback to `it()`.
 
-	  
+6. Testing without dependencies
+  * What if you were disconnected from the internet or your internet-based
+  dependencies is down? How would you test your code?
+    * You fake or mock dependencies that might not be available.
+  * Take a look a `package.json`. What is `rewire`?
+    * [rewire](https://github.com/jhnns/rewire) is a dependency injector for
+    testing node.
+  * Why are we using `rewire` instead of something more popular like `sinon`?
+    * `rewire` is easier to understand. Once you've grasped the concepts of
+    `rewire` you'll be ready to try [sinon](http://sinonjs.org/).
+  * In `test.check-site.js` what does `__set__()` do?
+    * It replaces the functionality in the target module with your local
+    functionality.
+  * What happens if we change the status that we're faking to something else
+  like a 301 or 404?
+    * Test test will fail.
+
+
+
 
 
 
