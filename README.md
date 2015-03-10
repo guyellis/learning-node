@@ -216,8 +216,7 @@ with different versions of Node.js and/or io.js?
     * `var rewire = require('rewire');`
     * `var someModule = rewire('some-module');`
   * Sinon is not immediately intuitive but it's very powerful and flexible.
-   Graduate on to this once you are comfortable with `rewire` and understand
-   the concepts.
+  Graduate on to this once you are comfortable with `rewire` and understand the concepts.
     * `npm install sinon --save-dev`
     * `var sinon = require('sinon');`
     * `sinon.stub(mailSender, 'mailSender', function (mailOptions, callback) {...`
@@ -238,5 +237,5 @@ with different versions of Node.js and/or io.js?
 * Update dependencies
   * `npm install npm-update-outdated --save-dev`
   * Use as first command in pre-commit section of package.json to make
-   sure that all dependencies are up-to-date.
+  sure that all dependencies are up-to-date.
 
