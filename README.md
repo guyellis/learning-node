@@ -148,15 +148,15 @@ A quick refresher on some HTTP statuses:
 5. Testing
   * Why is testing important in a dynamic language such as JavaScript?
   * What happened to the `index.js` file? Don't we need it anymore to run the checks?
-	* Open the `package.json` file. What is the `devDependencies` section?
-	* What is mocha?
-	* Why does `scripts` now have `test` set to `mocha`?
-	* How do you add a module to the `devDependencies` section with `npm i`?
-	* Open the `test.check-site.js` file. What do `describe()` and `it()` do?
+  * Open the `package.json` file. What is the `devDependencies` section?
+  * What is mocha?
+  * Why does `scripts` now have `test` set to `mocha`?
+  * How do you add a module to the `devDependencies` section with `npm i`?
+  * Open the `test.check-site.js` file. What do `describe()` and `it()` do?
   * Why don't we need to do an `npm i assert` to use the `assert` module?
-	* Run the test using `npm test`? Why does this work? i.e. How does `npm`
-	know to run `mocha`?
-	* What is `done()`?
+  * Run the test using `npm test`? Why does this work? i.e. How does `npm`
+  know to run `mocha`?
+  * What is `done()`?
 
 6. Testing without dependencies
   * What if you were disconnected from the internet or your internet-based

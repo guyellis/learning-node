@@ -146,36 +146,36 @@
      checked for syntactic accuracy.
   * What happened to the `index.js` file? Don't we need it anymore to run the checks?
     * In this module we're going to be running the checks through the tester.
-	* Open the `package.json` file. What is the `devDependencies` section?
-	  * `devDependencies` are third party modules that are only needed to run the tools
-	  that we use in the development of the application and are not needed when
-	  the application gets deployed to production.
-	* What is mocha?
-	  * [mocha](http://mochajs.org/) is a JavaScript test framework.
-	* Why does `scripts` now have `test` set to `mocha`?
-	  * This lets `npm` know how to execute the `npm test` command.
-	* How do you add a module to the `devDependencies` section with `npm i`?
-	  * `npm i <module-name> --save-dev`
-	* Open the `test.check-site.js` file. What do `describe()` and `it()` do?
-	  * `describe()` groups a suite of tests. You can nest multiple `describe()`
-	  calls. They provide scope for running `before()/beforeEach()/after()/afterEach()`
-	  hooks.
-	  * `it()` is the test that you want to run. Tests that require the same hooks
-	  are usually grouped together in the same `describe()`.
+  * Open the `package.json` file. What is the `devDependencies` section?
+    * `devDependencies` are third party modules that are only needed to run the tools
+    that we use in the development of the application and are not needed when
+    the application gets deployed to production.
+  * What is mocha?
+    * [mocha](http://mochajs.org/) is a JavaScript test framework.
+  * Why does `scripts` now have `test` set to `mocha`?
+    * This lets `npm` know how to execute the `npm test` command.
+  * How do you add a module to the `devDependencies` section with `npm i`?
+    * `npm i <module-name> --save-dev`
+  * Open the `test.check-site.js` file. What do `describe()` and `it()` do?
+    * `describe()` groups a suite of tests. You can nest multiple `describe()`
+    calls. They provide scope for running `before()/beforeEach()/after()/afterEach()`
+    hooks.
+    * `it()` is the test that you want to run. Tests that require the same hooks
+    are usually grouped together in the same `describe()`.
   * Why don't we need to do an `npm i assert` to use the `assert` module?
     * It's a core Node module.
-	* Run the test using `npm test`? Why does this work? i.e. How does `npm`
-	know to run `mocha`?
-	  * In the `package.json` file we've set the `test` key in the `scripts`
-	  object to `mocha`.
-	* What is `done()`?
-	  * It's a callback function that we call once we're done with our test.
-	  Because most of our tests will make asynchronous calls we need a mechanism
-	  for telling `mocha` when the test is done and it can move onto the next
-	  test. We do this by calling the callback that's passed into `it()` which
-	  is usually called `done`.
-	  * If all the code in our test is synchronous then we don't need to pass in
-	  a callback to `it()`.
+  * Run the test using `npm test`? Why does this work? i.e. How does `npm`
+  know to run `mocha`?
+    * In the `package.json` file we've set the `test` key in the `scripts`
+    object to `mocha`.
+  * What is `done()`?
+    * It's a callback function that we call once we're done with our test.
+    Because most of our tests will make asynchronous calls we need a mechanism
+    for telling `mocha` when the test is done and it can move onto the next
+    test. We do this by calling the callback that's passed into `it()` which
+    is usually called `done`.
+    * If all the code in our test is synchronous then we don't need to pass in
+    a callback to `it()`.
 
 6. Testing without dependencies
   * What if you were disconnected from the internet or your internet-based
