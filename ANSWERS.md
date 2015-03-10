@@ -194,6 +194,36 @@
   like a 301 or 404?
     * Test test will fail.
 
+7. Generating code coverage
+  * What's new in `package.json`?
+    * `istanbul` has been added as a dependency.
+  * What is `istanbul`?
+    * [istanbul](https://github.com/gotwarlost/istanbul) is a code coverage
+    tool for Node.
+  * What is code coverage?
+    * Usually expressed as a percent, it is the amount of your code that's
+    covered by tests.
+  * Why are we testing the `test.*.js` pattern and not `*.js` for `istanbul`?
+  Why aren't we using this pattern for `mocha`?
+    * By using a pattern such as `test.*.js` we can exclude files from running
+    in tests by given them a name that doesn't match that pattern.
+    * We should be using that pattern in for `mocha` as well. We didn't want
+    to introduce too many new concepts in that module.
+  * Run `npm run istanbul`. Where will you find the results?
+    * The results of the tests can be found in the `coverage` directory.
+    * A formatted and navigable report can be found in
+    `coverage/lco-report/index.html`
+  * Which lines are not tested?
+    * The `else` condition in `check-site.js`
+  * In `check-site.js`, what happens if we change the name of the `callback()` function in the
+  error condition to `callbag()`? Will the tests and coverage still run okay?
+  (i.e. Do `npm test` and `npm run istanbul` still run okay?)
+    * Yes, they run without error.
+  * What other tools can we use to protect against this?
+    * A linting tool can help protect against misspelled names.
+  * How can we modify our test to check the error handling code?
+    * By creating a test that fakes an error during the call to `request()`
+
 
 
 
