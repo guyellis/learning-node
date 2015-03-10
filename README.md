@@ -95,23 +95,23 @@ A quick refresher on some HTTP statuses:
   * What was the result? Is this what you expected?
   * What could you do to get the expected result?
   i.e. what happens when you open that site in a browser?
-	* Why is this type of utility of value?
-	* How can you check both http and https sites?
+  * Why is this type of utility of value?
+  * How can you check both http and https sites?
 
 2. Replace `http` with `request`
   * Open `module-02/check-site.js` in an editor
   * How does this differ from the file in module-01?
   * What is `'use strict'`?
-  * What happens when you `node check-site.js` this file?
-  * What can we do to address this failure?
-    * i.e. Why did `require('http')` work while
+  * What happens when you run `node check-site.js`?
+  * What can we do to address this failure? i.e. Why did `require('http')` work while
     `require('request')` did not?
   * What directory appears after we run `npm install request`?
-    * Note: You can use `i` instead of `install`.
+  (Note: You can use `i` instead of `install`.)
   * What is the purpose of this directory?
   * Does `node check-site.js` work now?
-    * Does it return the same status as in module-01? We'll
-    answer that question in the next module.
+    Does it return the same status as in module-01? (We'll
+    answer that question in the next module.)
+  * Why use `request` instead of `http`?
 
 3. Check status of multiple sites
   * Notice the new `package.json` file in this directory.
