@@ -101,3 +101,61 @@
     * We need to use the `followRedirect: false` option when making the request.
     * `request({uri:'server.com', followRedirect: false});`
 
+4. Using modules
+  * What is `module.exports` in `check-site.js`? Can it be set to anything
+  or only a function?
+    * `modules.exports` is the object that's returned as a result of the
+    `require()` call.
+    * It can be set to anything. Most commonly I have seen it set to a
+    function. After that an object is the next most common and then an
+    array. (These are my anecdotal observations.)
+  * Why doesn't `check-site` have `.js` at the end in the `require()` in
+  the `index.js` file?
+    * Node assumes an extension of `.js` if it's missing.
+  * Why is `check-site` preceded by `./` and `require('request')` didn't need this?
+    * `check-site` is a module that's local to the application that you're writing
+    so you need to tell Node where it is. `./` tells Node that it's in the same
+    directory as the file that's requesting it.
+  * Why does the `callback()` function take null as the first param?
+  Why does it take a single param in the second instance?
+    * The Node paradigm for callbacks is to pass the error as the first
+    parameter and any results/data in subsequent parameters. Read more about
+    [Error First Callbacks](http://fredkschott.com/post/2014/03/understanding-error-first-callbacks-in-node-js/)
+    * The first function is returning no error (null) as the first parameter and the data
+    as the second parameter. The second function is returning an error only (first parameter)
+    and has no data to supply because it's signalling that an error occurred.
+  * Why split the functionality into a separate module?
+    * By modularizing our functionality we are going to make it easier to test.
+  * What are the 3 ways of using `require()` that we've seen? i.e.
+  Where do the modules reside and what do we need to do to access them?
+    * Core Node modules such as `http` can simply be used by referencing them
+     using `require(<core-module-name')`
+    * Third party modules first need to be installed with `npm i`. This will
+    put them in the `node_modules` directory and then they can be referenced
+    in the same way that core modules are referenced using
+    `require(<third-party-module-name>)`
+    * Local application modules should be referenced using a relative path
+    `require('../../lib/<local-module-name>)`
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

@@ -132,10 +132,13 @@ A quick refresher on some HTTP statuses:
   * What needs to be changed to get a 301? i.e. how is `request` "helping?"
 
 4. Using modules
-  * What is `module.exports`?
-    * Can it be set to anything else or only a function?
+  * What is `module.exports` in `check-site.js`? Can it be set to anything
+  or only a function?
+  * Why doesn't `check-site` have `.js` at the end in the `require()` in
+  the `index.js` file?
+  * Why is `check-site` preceded by `./` and `require('request')` didn't need this?
   * Why does the `callback()` function take null as the first param?
-    * Why does it take a single param in the second instance?
+  Why does it take a single param in the second instance?
   * Why split the functionality into a separate module?
   * What are the 3 ways of using `require()` that we've seen? i.e.
   Where do the modules reside and what do we need to do to access them?
