@@ -240,4 +240,6 @@ with different versions of Node.js and/or io.js?
   sure that all dependencies are up-to-date.
 * Continuously run Node
   * `nodemon`
+* More hands-on learning
+  * [Node School](http://nodeschool.io)
 
