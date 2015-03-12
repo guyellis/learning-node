@@ -192,8 +192,6 @@ A quick refresher on some HTTP statuses:
 
 # Tools and Utilities
 
-Questions and Answers
-
 * How can I keep node and io.js up-to-date and easily switch between versions?
   * [n](https://github.com/tj/n) and [nvm](https://github.com/creationix/nvm)
   are currently the most popular options.
@@ -240,4 +238,6 @@ with different versions of Node.js and/or io.js?
   * `npm install npm-update-outdated --save-dev`
   * Use as first command in pre-commit section of package.json to make
   sure that all dependencies are up-to-date.
+* Continuously run Node
+  * `nodemon`
 

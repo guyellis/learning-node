@@ -2,7 +2,7 @@
 
 var request = require('request');
 
-module.exports.run = function(callback) {
+module.exports = function(callback) {
   request('http://www.yahoo.com', function(error,response){
     if(response.statusCode === 200) {
       return callback(null, 'Received expected status');
