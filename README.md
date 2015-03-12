@@ -68,7 +68,7 @@ Use one of these methods if you want to follow along during a presentation/works
   * Advantages: Don't need to download anything.
 * Download the modules (and this file) as a zip file from GitHub and unzip it locally.
   * Advantages: No `git` knowledge or `git` software required.
-* Clone the repo locally
+* Clone the repo locally: `git clone git@github.com:guyellis/learning-node.git`
   * Advantages: Can see what changes you made compared to original.
   * Can quickly revert changes.
 * Fork and clone repo locally
