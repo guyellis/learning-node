@@ -21,10 +21,12 @@
   * How does this differ from the file in module-01?
     * We're using `request` instead of `http`.
     * We've added `use 'strict'`.
-  * What is `'use strict'`?
+  * What is `'use strict';`? Bonus points if you can answer: What is `'use strong';`?
     * It is a way to opt in to a restricted variant of JavaScript.
     * It will help you catch coding mistakes. Use it.
     * [Mozilla explains strict mode](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Strict_mode)
+    * `'use strong';` is an even more restrictive mode than `'use strict';` It's currently a
+    [Google Strawman Proposal](https://docs.google.com/document/d/1Qk0qC4s_XNCLemj42FqfsRLp49nDQMZ1y7fwf5YjaI4/view#heading=h.q74i7jz78xf).
   * What happens when you run `node check-site.js`?
     * An `Error: Cannot find module 'request'` or similar is printed.
   * What can we do to address this failure? i.e. Why did `require('http')` work while

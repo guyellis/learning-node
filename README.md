@@ -105,7 +105,7 @@ A quick refresher on some HTTP statuses:
 2. Replace `http` with `request`
   * Open `module-02/check-site.js` in an editor
   * How does this differ from the file in module-01?
-  * What is `'use strict'`?
+  * What is `'use strict';`? Bonus points if you can answer: What is `'use strong';`?
   * What happens when you run `node check-site.js`?
   * What can we do to address this failure? i.e. Why did `require('http')` work while
     `require('request')` did not?
