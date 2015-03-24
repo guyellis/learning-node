@@ -95,12 +95,21 @@ A quick refresher on some HTTP statuses:
   * Open the file in an editor.
   * What does this code do?
   * What is the `require()` function?
-  * Run `node check-site.js`
+  * In a terminal window run `node check-site.js`. (Note, sometimes students
+  open the Node REPL instead of a terminal. If this happens then `node check-site.js`
+  won't work.
+  * What is the Node `REPL`?
   * What was the result? Is this what you expected?
   * What could you do to get the expected result?
   i.e. what happens when you open that site in a browser?
   * Why is this type of utility of value?
   * How can you check both http and https sites?
+  * The site that you are checking in `check-site.js` is yahoo.com. If you're in
+  a class environment and there are a lot of student and everyone is NAT'd through
+  the same IP then Yahoo's attack detection may trigger and some students may not
+  be able to get the expected result. In this case have them change the URL to some
+  other well known site.
+  * Are anonymous functions better than named ones?
 
 2. Replace `http` with `request`
   * Open `module-02/check-site.js` in an editor

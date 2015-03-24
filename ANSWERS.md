@@ -7,6 +7,13 @@
   * What is the `require()` function?
     * `require()` is how you make the functionality of one module
     available to another module in Node.
+  * What is the Node `REPL`?
+    * `REPL` stands for Read Evaluate Print Loop. It is an interactive
+    way of using Node. Depending on how you installed Node you may
+    accidentally open the `REPL` instead of a terminal if the installation
+    added a "helpful" shortcut to it.
+    * In the `REPL` you can type JavaScript commands, load modules and
+    interact with the Node.js API.
   * What was the result? Is this what you expected?
     * 301, would have expected a 200.
   * What could you do to get the expected result? i.e. what happens when you open that site in a browser?
@@ -16,6 +23,8 @@
     A utility like this can automate the monitoring of countless URIs.
   * How can you check both http and https sites?
     * `require('http')` and `require('https')`
+  * Are anonymous functions better than named ones?
+    * Named functions make it easier to notice or find your function in the call-stack.
 
 2. Replace `http` with `request`
   * How does this differ from the file in module-01?
