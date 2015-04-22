@@ -233,7 +233,7 @@ with different versions of Node.js and/or io.js?
   * Istanbul
     * `npm install istanbul --save-dev`
     * package.json:
-      * `"istanbul": "node_modules/.bin/istanbul cover node_modules/.bin/_mocha test/test.*.js"`
+      * `"coverage": "node_modules/.bin/istanbul cover node_modules/.bin/_mocha test/test.*.js"`
     * `npm run coverage`
 * Linting
   * [Compare JS Linting Tools](http://www.sitepoint.com/comparison-javascript-linting-tools)
