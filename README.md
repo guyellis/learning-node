@@ -184,17 +184,17 @@ A quick refresher on some HTTP statuses:
   * What is code coverage?
   * Why are we testing the `test.*.js` pattern and not `*.js` for `istanbul`?
   Why aren't we using this pattern for `mocha`?
-  * Run `npm run istanbul`. Where will you find the results?
+  * Run `npm run coverage`. Where will you find the results?
   * Which lines are not tested?
   * In `check-site.js`, what happens if we change the name of the `callback()` function in the
   error condition to `callbag()`? Will the tests and coverage still run okay?
-  (i.e. Do `npm test` and `npm run istanbul` still run okay?)
+  (i.e. Do `npm test` and `npm run coverage` still run okay?)
   * What other tools can we use to protect against this?
   * How can we modify our test to check the error handling code?
 
 8. Complete code coverage
   * Take a look at the new test in the test file. What does it do?
-  * Run `npm run istanbul`. What does the code coverage look like now?
+  * Run `npm run coverage`. What does the code coverage look like now?
   * What happens if we change the name of the `callback()` function in the
   error condition to `callbag()`? Will the tests and coverage still run okay?
   * Although they failed, was a coverage report still generated?
@@ -234,7 +234,7 @@ with different versions of Node.js and/or io.js?
     * `npm install istanbul --save-dev`
     * package.json:
       * `"istanbul": "node_modules/.bin/istanbul cover node_modules/.bin/_mocha test/test.*.js"`
-    * `npm run istanbul`
+    * `npm run coverage`
 * Linting
   * [Compare JS Linting Tools](http://www.sitepoint.com/comparison-javascript-linting-tools)
   * JSHint

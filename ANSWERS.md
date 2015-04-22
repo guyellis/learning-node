@@ -220,7 +220,7 @@
     in tests by given them a name that doesn't match that pattern.
     * We should be using that pattern in for `mocha` as well. We didn't want
     to introduce too many new concepts in that module.
-  * Run `npm run istanbul`. Where will you find the results?
+  * Run `npm run coverage`. Where will you find the results?
     * The results of the tests can be found in the `coverage` directory.
     * A formatted and navigable report can be found in
     `coverage/lco-report/index.html`
@@ -228,7 +228,7 @@
     * The `else` condition in `check-site.js`
   * In `check-site.js`, what happens if we change the name of the `callback()` function in the
   error condition to `callbag()`? Will the tests and coverage still run okay?
-  (i.e. Do `npm test` and `npm run istanbul` still run okay?)
+  (i.e. Do `npm test` and `npm run coverage` still run okay?)
     * Yes, they run without error.
   * What other tools can we use to protect against this?
     * A linting tool can help protect against misspelled names.
@@ -238,7 +238,7 @@
 8. Complete code coverage
   * Take a look at the new test in the test file. What does it do?
     * It fakes a 404 HTTP status code when `request` is called.
-  * Run `npm run istanbul`. What does the code coverage look like now?
+  * Run `npm run coverage`. What does the code coverage look like now?
     * Now should 100% coverage.
   * What happens if we change the name of the `callback()` function in the
   error condition to `callbag()`? Will the tests and coverage still run okay?
